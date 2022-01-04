@@ -1,3 +1,8 @@
 {
-  "name": "Natália Satie Odashima (en)"
+  "lang": {
+    "en": "English",
+    "title": "Language",
+    "pt": "Portuguese (Brazil)"
+  },
+  "name": "Natália Satie Odashima"
 }
