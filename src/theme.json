@@ -1,0 +1,9 @@
+{
+  "basic": {
+    "primary": "#2F4550",
+    "secondary": "#586F7C",
+    "secondary-light": "#B8DBD9",
+    "white": "#B8DBD9",
+    "black": "#000000"
+  }
+}
