@@ -1,7 +1,7 @@
 import { Container } from './MainStyle';
 import { useTranslation } from 'react-i18next';
 import MyAvatar from '../Avatar/Avatar';
-import ChangeLang from '../ChangeLang/ChangeLang';
+import Content from '../Content/Content';
 
 const Main = () => {
   const { t } = useTranslation('translation');
@@ -9,7 +9,7 @@ const Main = () => {
   return (
     <Container>
       <MyAvatar />
-      <ChangeLang />
+      <Content />
     </Container>
   );
 }

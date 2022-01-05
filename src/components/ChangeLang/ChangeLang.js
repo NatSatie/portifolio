@@ -19,8 +19,13 @@ const ChangeLang = () => {
   return (
     <div>
       <Box>
-        <FormControl sx={{ m: 2, minWidth: 200 }}>
-          <InputLabel id="select-label-change-language">{t('lang.title')}</InputLabel>
+        <FormControl sx={{ minWidth: 80 }}>
+          <InputLabel id="select-label-change-language"
+            inputProps={{
+              style: {fontSize: 12} 
+            }}
+          >
+            {t('lang.title')}</InputLabel>
           <Select
             labelId="select-label-change-language"
             id="select-label-change-language"

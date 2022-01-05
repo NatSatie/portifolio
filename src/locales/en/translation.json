@@ -1,8 +1,11 @@
 {
-  "lang": {
-    "en": "English",
-    "title": "Language",
-    "pt": "Portuguese (Brazil)"
+  "bio": {
+    "graduation": "Undergratuade Computer Science Student at UNICAMP (Univerysity of Campinas)"
   },
-  "name": "Natália Satie Odashima"
+  "lang": {
+    "en": "EN",
+    "title": "Language",
+    "pt": "PT-BR"
+  },
+  "now": "now"
 }

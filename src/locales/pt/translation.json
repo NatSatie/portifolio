@@ -1,8 +1,11 @@
 {
-  "lang": {
-    "en": "Inglês",
-    "title": "Idioma",
-    "pt": "Português (Brasil)"
+  "bio": {
+    "graduation": "Bacharelado em Ciência da Computação na UNICAMP (Universidade Estadual de Campinas)"
   },
-  "name": "Natália Satie Odashima"
+  "lang": {
+    "en": "EN",
+    "title": "Idioma",
+    "pt": "PT-BR"
+  },
+  "now": "atual"
 }
