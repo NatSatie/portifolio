@@ -12,21 +12,21 @@ const ChangeLang = () => {
   const [lang, setLang] = useState('pt');
 
   const handleChange = (event) => {
-    setLang(event.target.value)
-    i18n.changeLanguage(lang);
+    setLang(event.target.value);
+    i18n.changeLanguage(event.target.value);
   };
 
   return (
     <div>
       <Box>
-        <FormControl>
+        <FormControl sx={{ m: 2, minWidth: 200 }}>
           <InputLabel id="select-label-change-language">{t('lang.title')}</InputLabel>
           <Select
             labelId="select-label-change-language"
             id="select-label-change-language"
             value={lang}
             label={t('lang.title')}
-            onChange={(e) => handleChange(e)}
+            onChange={handleChange}
           >
             <MenuItem value='en'>
               {t('lang.en')}

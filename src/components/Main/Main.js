@@ -8,9 +8,7 @@ const Main = () => {
 
   return (
     <Container>
-      asdasdasdasdasasdasdasdsad
       <MyAvatar />
-      <p>{t('name')}</p>
       <ChangeLang />
     </Container>
   );
