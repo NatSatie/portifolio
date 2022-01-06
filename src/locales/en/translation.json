@@ -1,11 +1,31 @@
 {
   "bio": {
-    "graduation": "Undergratuade Computer Science Student at UNICAMP (Univerysity of Campinas)"
+    "graduation": "Undergratuade Computer Science Student at UNICAMP (Univerysity of Campinas)",
+    "pronoum": "Pronoums: She/Her"
   },
   "lang": {
     "en": "EN",
     "title": "Language",
     "pt": "PT-BR"
   },
-  "now": "now"
+  "now": "now",
+  "tabs": {
+    "about": "About me",
+    "experience": "Experience",
+    "projects": "Projects"
+  },
+  "skill": {
+    "begginer": {
+      "description": "I have knowledge about the tool/language, however I have few experiences",
+      "title": "Begginer"
+    },
+    "intermediate": {
+      "description": "I have worked with project at work and college",
+      "title": "Intermediate"
+    },
+    "advanced": {
+      "description": "I know the fundamental concepts and I'm able to create complex projects",
+      "title": "Advanced"
+    }
+  }
 }

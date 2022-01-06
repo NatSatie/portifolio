@@ -24,8 +24,8 @@ const MyAvatar = () => {
         </AvatarContainer>
         <TextContainer>
           <BoldText>Natália Satie Odashima</BoldText>
-          <Text>{t('bio.graduation')}</Text>
-          <Text>2016-{t('now')}</Text>
+          <Text>{t('bio.graduation')} (2016-{t('now')})</Text>
+          <Text>{t('bio.pronoum')}</Text>
         </TextContainer>
         <ChangeLang />
       </Container>

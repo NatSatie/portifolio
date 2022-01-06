@@ -1,11 +1,31 @@
 {
   "bio": {
-    "graduation": "Bacharelado em Ciência da Computação na UNICAMP (Universidade Estadual de Campinas)"
+    "graduation": "Bacharelado em Ciência da Computação na UNICAMP (Universidade Estadual de Campinas)",
+    "pronoum": "Pronomes: Ela/Dela"
   },
   "lang": {
     "en": "EN",
     "title": "Idioma",
     "pt": "PT-BR"
   },
-  "now": "atual"
+  "now": "atual",
+  "tabs": {
+    "about": "Sobre",
+    "experience": "Experiência",
+    "projects": "Projetos"
+  },
+  "skill": {
+    "begginer": {
+      "description": "Tenho conhecimento da ferramenta, porém não tenho muita experiência",
+      "title": "Iniciante"
+    },
+    "intermediate": {
+      "description": "Já trabalhei com projetos no trabalho e na faculdade",
+      "title": "Intermediário"
+    },
+    "advanced": {
+      "description": "Conheço muito bem os fundamentos e posso criar projetos complexos",
+      "title": "Avançado"
+    }
+  }
 }
