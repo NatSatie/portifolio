@@ -15,15 +15,19 @@ export const Container = styled.div`
 `;
 
 export const SkillContainer = styled.div`
+  align-items: stretch;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  flex-shrink: wrap;
   justify-content: center;
   align-content: center;
+  padding: 16px 0 0 0;
   margin: auto;
 `;
 
 export const AccordionContainer = styled.div`
+  min-width: 400px;
   max-width: 400px;
 `;
 

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
-
-export const Text = styled.p`
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
+import ListItem from '@mui/material/ListItem';
+ 
+export const CustomListItem = styled(ListItem)`
+  margin: 0;
+  padding: 0;
 `;
