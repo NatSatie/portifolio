@@ -4,6 +4,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import pokedex from './img/pokedex.jpg';
+import archive from './img/archive.png';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import { SiGithub, SiCodesandbox } from "react-icons/si";
@@ -14,6 +15,25 @@ const Projects = () => {
   const { t } = useTranslation('translation');
 
   const experience = [
+    {
+      "name": t('projects.title.portifolio'),
+      "tags": [
+        {
+          "title": t('projects.tags.project')
+        },
+        {
+          "title": "React.js"
+        }
+      ],
+      "description": t('projects.description.portifolio'),
+      "img": <CardMedia
+        component="img"
+        height="140"
+        image={archive}
+        alt="image alt"
+      />,
+      "rep": "https://github.com/NatSatie/portifolio/tree/react-project"
+    },
     {
       "name": t('projects.title.pokemon'),
       "tags": [
@@ -39,7 +59,7 @@ const Projects = () => {
   return (
     <SkillContainer>
       {experience.map( elem => 
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ margin: " 0 16px 16px 16px", maxWidth: 345, minWidth: 345, justifyContent: "spaceBetween" }}>
           <CardActionArea>
             {elem.img}
             <CardContent>
@@ -58,14 +78,16 @@ const Projects = () => {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button size="small" color="primary">
+            <Button size="small" color="primary" href={elem.rep} target="_blank">
               <SiGithub/>
               Github
             </Button>
-            <Button size="small" color="primary">
-              <SiCodesandbox />
-              Demo
-            </Button>
+            { elem?.demo &&
+              <Button size="small" color="primary" href={elem?.demo} target="_blank">
+                <SiCodesandbox />
+                Demo
+              </Button>
+            }
           </CardActions>
         </Card>
       )}

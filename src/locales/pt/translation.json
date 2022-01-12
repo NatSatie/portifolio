@@ -62,11 +62,13 @@
     "description": {
       "gobots": "Estagiária em desenvolvimento web, trabalhei com React.js e Typescript, com algumas experiências com Angular. Responsável pelo desenvolvimento de features, apresentações e revisão de código.",
       "secomp": "Coordenadora de comunicação, responsável pelo marketing, gerenciamento do time para criar produtos para o evento e obter patrocínios.",
-      "pokemon": "Um pokedex da primeira geração, é possível visualizar todos os 151 pokemon e procurá-los por nome."
+      "pokemon": "Um pokedex da primeira geração, é possível visualizar todos os 151 pokemon e procurá-los por nome.",
+      "portifolio": "Esse site foi criado a partir React.js e Javascript."
     },
     "title": {
       "secomp": "SECOMP - Semana Acadêmica de Computação da UNICAMP (2017-2018)",
-      "pokemon": "Pokedex Geração 1"
+      "pokemon": "Pokedex Geração 1",
+      "portifolio": "Portifolio"
     }
   }
 }

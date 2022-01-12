@@ -98,12 +98,12 @@ const AboutMe = () => {
       "title": t('skill.coding.lang.title'),
       "list": [
         {
-          "name": "Portugues",
+          "name": t('skill.coding.lang.pt'),
           "experience": "nativo",
           "description": ""
         },
         {
-          "name": "Inglês",
+          "name": t('skill.coding.lang.en'),
           "experience": "intermediate",
           "description": ""
         }

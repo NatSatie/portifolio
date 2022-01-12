@@ -62,11 +62,13 @@
     "description": {
       "gobots": "Intern as front-end developer, worked with React.js and Typescript, minor experiences with Angular also responsible to development, presentations and code reviews.",
       "secomp": "Communications coordinator, responsible for the marketing, manage a team to create product for the event and get social network and sponsorship.",
-      "pokemon": "A simple generation 1 pokedex, you're able to visualize all 151 pokemon and search by name."
+      "pokemon": "A simple generation 1 pokedex, you're able to visualize all 151 pokemon and search by name.",
+      "portifolio": "This website is made by me with React.js and Javascript."
     },
     "title": {
       "secomp": "SECOMP - Academic Week for Computing (2017-2018)",
-      "pokemon": "Pokedex Gen 1"
+      "pokemon": "Pokedex Gen 1",
+      "portifolio": "Portifolio"
     }
   }
 }
