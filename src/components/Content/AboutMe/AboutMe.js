@@ -9,107 +9,107 @@ import { SiReact, SiTypescript,SiHtml5, SiAngular, SiJavascript, SiPython, SiC,S
 import { TiArrowSync } from "react-icons/ti";
 import Typography from '@mui/material/Typography';
 
-const skills = [
-  {
-    "title": "Hard Skills: Web",
-    "description": "Consiste nas habilidades em desenvolver sistemas para plataformas web e na proficiência do uso de framworks.",
-    "list": [
-      {
-        "name": "React.js",
-        "experience": "advanced",
-        "description": "",
-        "icon": <SiReact />,
-        "color": "#112f45"
-      },
-      {
-        "name": "Javascript & Typescript",
-        "experience": "intermediate",
-        "description": "",
-        "icon": <SiTypescript />,
-        "color": "#3178c6"
-      },
-      {
-        "name": "HTML & CSS",
-        "experience": "intermediate",
-        "description": "",
-        "icon": <SiHtml5 />,
-        "color": "#ec6231"
-      },
-      {
-        "name": "Angular",
-        "experience": "begginer",
-        "description": "",
-        "icon": <SiAngular />,
-        "color": "#c63131"
-      }
-    ]
-  },
-  {
-    "title": "Hard Skills: Coding",
-    "description": "Essa lista consiste nas habilidades em solução de problemas, como desafios de programação e desenvolvimento de projetos pequenos.",
-    "list": [
-      {
-        "name": "Javascript",
-        "experience": "intermediate",
-        "description": "",
-        "icon": <SiJavascript color="black"/>,
-        "color": "#f0db4f"
-      },
-      {
-        "name": "Python",
-        "experience": "intermediate",
-        "description": "",
-        "icon": <SiPython />,
-        "color": "#306998"
-      },
-      {
-        "name": "C",
-        "experience": "begginer",
-        "description": "",
-        "icon": <SiC />,
-        "color": "#0556f3"
-      }
-    ]
-  },
-  {
-    "title": "Other Skills",
-    "description": "São habilidades relacionadas à área de tecnologia que não são linguagens de programação, como práticas de desenvolvimento.",
-    "list": [
-      {
-        "name": "Git",
-        "experience": "intermediate",
-        "description": "",
-        "icon": <SiGit />,
-        "color": "#F1502F"
-      },
-      {
-        "name": "Agile",
-        "experience": "intermediate",
-        "description": "",
-        "icon": <TiArrowSync />,
-        "color": "black"
-      }
-    ]
-  },
-  {
-    "title": "Languages",
-    "list": [
-      {
-        "name": "Portugues",
-        "experience": "nativo",
-        "description": ""
-      },
-      {
-        "name": "Inglês",
-        "experience": "intermediate",
-        "description": ""
-      }
-    ]
-  },
-]
-
 const AboutMe = () => {
   const { t } = useTranslation('translation');
+
+  const skills = [
+    {
+      "title": t('skill.coding.web.title'),
+      "description": t('skill.coding.code.description'),
+      "list": [
+        {
+          "name": "React.js",
+          "experience": "advanced",
+          "description": "",
+          "icon": <SiReact />,
+          "color": "#112f45"
+        },
+        {
+          "name": "Javascript & Typescript",
+          "experience": "intermediate",
+          "description": "",
+          "icon": <SiTypescript />,
+          "color": "#3178c6"
+        },
+        {
+          "name": "HTML & CSS",
+          "experience": "intermediate",
+          "description": "",
+          "icon": <SiHtml5 />,
+          "color": "#ec6231"
+        },
+        {
+          "name": "Angular",
+          "experience": "begginer",
+          "description": "",
+          "icon": <SiAngular />,
+          "color": "#c63131"
+        }
+      ]
+    },
+    {
+      "title": t('skill.coding.code.title'),
+      "description": t('skill.coding.code.description'),
+      "list": [
+        {
+          "name": "Javascript",
+          "experience": "intermediate",
+          "description": "",
+          "icon": <SiJavascript color="black"/>,
+          "color": "#f0db4f"
+        },
+        {
+          "name": "Python",
+          "experience": "intermediate",
+          "description": "",
+          "icon": <SiPython />,
+          "color": "#306998"
+        },
+        {
+          "name": "C",
+          "experience": "begginer",
+          "description": "",
+          "icon": <SiC />,
+          "color": "#0556f3"
+        }
+      ]
+    },
+    {
+      "title": t('skill.coding.other.title'),
+      "description": t('skill.coding.other.description'),
+      "list": [
+        {
+          "name": "Git",
+          "experience": "intermediate",
+          "description": "",
+          "icon": <SiGit />,
+          "color": "#F1502F"
+        },
+        {
+          "name": "Agile",
+          "experience": "intermediate",
+          "description": "",
+          "icon": <TiArrowSync />,
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "title": t('skill.coding.lang.title'),
+      "list": [
+        {
+          "name": "Portugues",
+          "experience": "nativo",
+          "description": ""
+        },
+        {
+          "name": "Inglês",
+          "experience": "intermediate",
+          "description": ""
+        }
+      ]
+    },
+  ]
 
   return (
     <>

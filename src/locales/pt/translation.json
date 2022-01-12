@@ -26,6 +26,47 @@
     "advanced": {
       "description": "Conheço muito bem os fundamentos e posso criar projetos complexos",
       "title": "Avançado"
+    },
+    "nativo": {
+      "title": "Nativo"
+    },
+    "coding": {
+      "web": {
+        "title": "Hard Skills: Web",
+        "description": "Consiste nas habilidades em desenvolver sistemas para plataformas web e na proficiência do uso de frameworks."
+      },
+      "code": {
+        "title": "Hard Skills: Programação",
+        "description": "Essa lista consiste nas habilidades em solução de problemas, como desafios de programação e desenvolvimento de projetos pequenos."
+      },
+      "other": {
+        "title": "Outras Habilidades",
+        "description": "São habilidades relacionadas à área de tecnologia que não são linguagens de programação, como práticas de desenvolvimento."
+      },
+      "lang": {
+        "title": "Línguas",
+        "pt": "Português",
+        "en": "Inglês"
+      }
+    }
+  },
+  "projects": {
+    "tags": {
+      "intern": "Estágio",
+      "web": "Desenvolvimento Web",
+      "volunteer": "Voluntária",
+      "coordinator": "Coordenadora",
+      "event": "Organização de eventos",
+      "project": "Projeto"
+    },
+    "description": {
+      "gobots": "Estagiária em desenvolvimento web, trabalhei com React.js e Typescript, com algumas experiências com Angular. Responsável pelo desenvolvimento de features, apresentações e revisão de código.",
+      "secomp": "Coordenadora de comunicação, responsável pelo marketing, gerenciamento do time para criar produtos para o evento e obter patrocínios.",
+      "pokemon": "Um pokedex da primeira geração, é possível visualizar todos os 151 pokemon e procurá-los por nome."
+    },
+    "title": {
+      "secomp": "SECOMP - Semana Acadêmica de Computação da UNICAMP (2017-2018)",
+      "pokemon": "Pokedex Geração 1"
     }
   }
 }

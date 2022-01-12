@@ -10,31 +10,31 @@ import { SiGithub, SiCodesandbox } from "react-icons/si";
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 
-const experience = [
-  {
-    "name": "Pokedex Geração 1",
-    "tags": [
-      {
-        "title": "Projeto"
-      },
-      {
-        "title": "React.js"
-      }
-    ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend vitae augue at sollicitudin. Sed non libero sit amet magna aliquet feugiat eget vel diam. Cras pharetra ante non enim.",
-    "img": <CardMedia
-      component="img"
-      height="140"
-      image={pokedex}
-      alt="image alt"
-    />,
-    "rep": "https://github.com/NatSatie/pokemon-list",
-    "demo": "https://mr34l.sse.codesandbox.io/"
-  }
-];
-
 const Projects = () => {
   const { t } = useTranslation('translation');
+
+  const experience = [
+    {
+      "name": t('projects.title.pokemon'),
+      "tags": [
+        {
+          "title": t('projects.tags.project')
+        },
+        {
+          "title": "React.js"
+        }
+      ],
+      "description": t('projects.description.pokemon'),
+      "img": <CardMedia
+        component="img"
+        height="140"
+        image={pokedex}
+        alt="image alt"
+      />,
+      "rep": "https://github.com/NatSatie/pokemon-list",
+      "demo": "https://mr34l.sse.codesandbox.io/"
+    }
+  ];
 
   return (
     <SkillContainer>

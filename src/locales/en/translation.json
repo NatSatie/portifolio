@@ -26,6 +26,47 @@
     "advanced": {
       "description": "I know the fundamental concepts and I'm able to create complex projects",
       "title": "Advanced"
+    },
+    "nativo": {
+      "title": "Native"
+    },
+    "coding": {
+      "web": {
+        "title": "Hard Skills: Web",
+        "description": "Skills related to develop web applications and hability to work with frameworks."
+      },
+      "code": {
+        "title": "Hard Skills: Programming",
+        "description": "Hability to problem-solving, such as code challenges and developt small scale projects."
+      },
+      "other": {
+        "title": "Other Skills",
+        "description": "Not relatect directly to technical skills, its about good practises to develop."
+      },
+      "lang": {
+        "title": "Languages",
+        "pt": "Portuguese",
+        "en": "English"
+      }
+    }
+  },
+  "projects": {
+    "tags": {
+      "intern": "Intern",
+      "web": "Web development",
+      "volunteer": "Volunteer",
+      "coordinator": "Coordinator",
+      "event": "Event manager",
+      "project": "Project"
+    },
+    "description": {
+      "gobots": "Intern as front-end developer, worked with React.js and Typescript, minor experiences with Angular also responsible to development, presentations and code reviews.",
+      "secomp": "Communications coordinator, responsible for the marketing, manage a team to create product for the event and get social network and sponsorship.",
+      "pokemon": "A simple generation 1 pokedex, you're able to visualize all 151 pokemon and search by name."
+    },
+    "title": {
+      "secomp": "SECOMP - Academic Week for Computing (2017-2018)",
+      "pokemon": "Pokedex Gen 1"
     }
   }
 }

@@ -7,47 +7,47 @@ import {  CardActions } from '@mui/material';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 
-const experience = [
-  {
-    "name": "GoBots (01/2021-12/2021)",
-    "tags": [
-      {
-        "title": "Estágio",
-      },
-      {
-        "title": "Desenvolvimento Web",
-      },
-      {
-        "title": "React.js",
-      },
-      {
-        "title": "Javascript",
-      },
-      {
-        "title": "Angular",
-      }
-    ],
-    "description": "Eh um projetoasdas asdasdsaddas das adsasdasdasdasasddasd em reacasd asdasdt.j",
-  },
-  {
-    "name": "SECOMP - Semana Acadêmica de Computação da UNICAMP (2017-2018)",
-    "tags": [
-      {
-        "title": "Trabalho Voluntário",
-      },
-      {
-        "title": "Coordenação",
-      },
-      {
-        "title": "Organização de eventos",
-      }
-    ],
-    "description": "Coordenadora de Comunicação: Eh um projetoasdas asdasdsaddas das adsasdasdasdasasddasd em reacasd asdasdt.j",
-  }
-];
-
 const Experience = () => {
   const { t } = useTranslation('translation');
+
+  const experience = [
+    {
+      "name": "GoBots (01/2021-12/2021)",
+      "tags": [
+        {
+          "title": t('projects.tags.intern'),
+        },
+        {
+          "title": t('projects.tags.web'),
+        },
+        {
+          "title": "React.js",
+        },
+        {
+          "title": "Javascript",
+        },
+        {
+          "title": "Angular",
+        }
+      ],
+      "description": t('projects.description.gobots'),
+    },
+    {
+      "name": t('projects.title.secomp'),
+      "tags": [
+        {
+          "title": t('projects.tags.volunteer'),
+        },
+        {
+          "title": t('projects.tags.coordinator'),
+        },
+        {
+          "title": t('projects.tags.event'),
+        }
+      ],
+      "description": t('projects.description.secomp'),
+    }
+  ];
 
   return (
     <SkillContainer>
