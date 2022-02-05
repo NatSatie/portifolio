@@ -1,7 +1,15 @@
 {
+  "education": {
+    "title": "Formação",
+    "graduation": "Bacharelado em Ciência da Computação na Universidade Estadual de Campinas (2016-2023)",
+    "description": "",
+    "findMore": ""
+  },
   "bio": {
-    "graduation": "Bacharelado em Ciência da Computação na UNICAMP (Universidade Estadual de Campinas)",
-    "pronoum": "Pronomes: Ela/Dela"
+    "pronoum": "Ela/dela; 25; brasileira",
+    "subtitle": "Desenvolvedora de Software",
+    "front": "Desenvolvedora Front-end Web",
+    "back": "Desenvolvedora Back-end"
   },
   "lang": {
     "en": "EN",
@@ -12,7 +20,8 @@
   "tabs": {
     "about": "Sobre",
     "experience": "Experiência",
-    "projects": "Projetos"
+    "projects": "Projetos",
+    "contact": "Contato"
   },
   "skill": {
     "begginer": {
@@ -60,15 +69,19 @@
       "project": "Projeto"
     },
     "description": {
+      "matera": "Estagiária em desenvolvimento back-end.",
       "gobots": "Estagiária em desenvolvimento web, trabalhei com React.js e Typescript, com algumas experiências com Angular. Responsável pelo desenvolvimento de features, apresentações e revisão de código.",
       "secomp": "Coordenadora de comunicação, responsável pelo marketing, gerenciamento do time para criar produtos para o evento e obter patrocínios.",
       "pokemon": "Um pokedex da primeira geração, é possível visualizar todos os 151 pokemon e procurá-los por nome.",
-      "portifolio": "Esse site foi criado a partir React.js e Javascript."
+      "portifolio": "Esse site foi criado a partir React.js e Javascript.",
+      "gamux": "Voluntária no grupo de desenvolvimento de jogos da UNICAMP, responsável por promover atividades e criação da identidade visual."
     },
     "title": {
       "secomp": "SECOMP - Semana Acadêmica de Computação da UNICAMP (2017-2018)",
       "pokemon": "Pokedex Geração 1",
-      "portifolio": "Portifolio"
+      "portifolio": "Portifolio",
+      "matera": "Matera (01/2022 - atualmente)",
+      "gamux": "Gamux (2017 - 2018)"
     }
   }
 }

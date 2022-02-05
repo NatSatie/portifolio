@@ -1,20 +1,12 @@
 import { useTranslation } from 'react-i18next';
-import { SkillContainer } from '../ContentStyle';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import pokedex from './img/pokedex.jpg';
-import archive from './img/archive.png';
-import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
-import { SiGithub, SiCodesandbox } from "react-icons/si";
-import Chip from '@mui/material/Chip';
+import { RowContainer, SecondarySubtitle, Image, Container, Title, Info, CollumnContainer, Description } from './../GeneralStyle';
 import Stack from '@mui/material/Stack';
+import SkillTag from '../../SkillTag/SkillTag';
 
 const Projects = () => {
   const { t } = useTranslation('translation');
 
-  const experience = [
+  /* const experience = [
     {
       "name": t('projects.title.portifolio'),
       "tags": [
@@ -54,44 +46,37 @@ const Projects = () => {
       "rep": "https://github.com/NatSatie/pokemon-list",
       "demo": "https://mr34l.sse.codesandbox.io/"
     }
-  ];
+  ]; */
 
   return (
-    <SkillContainer>
-      {experience.map( elem => 
-        <Card sx={{ margin: " 0 16px 16px 16px", maxWidth: 345, minWidth: 345, justifyContent: "spaceBetween" }}>
-          <CardActionArea>
-            {elem.img}
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                {elem.name}
-              </Typography>
-              <Stack direction="row" spacing={1}>
-                { elem.tags.map( tag =>
-                  <Chip label={tag.title} size="small" /> 
-                )}
-              </Stack>
-              <Typography variant="body2" color="text.secondary">
-                <br></br>
-                {elem.description}
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-          <CardActions>
-            <Button size="small" color="primary" href={elem.rep} target="_blank">
-              <SiGithub/>
-              Github
-            </Button>
-            { elem?.demo &&
-              <Button size="small" color="primary" href={elem?.demo} target="_blank">
-                <SiCodesandbox />
-                Demo
-              </Button>
-            }
-          </CardActions>
-        </Card>
-      )}
-    </SkillContainer>
+    <Container isColumn>
+        <Title>{t('tabs.projects')}</Title>
+        <RowContainer>
+            <CollumnContainer>
+                <SecondarySubtitle>{t('education.title')}</SecondarySubtitle>
+                <Stack direction="row" spacing={2}>
+                    <SkillTag name="asdasdasd" />
+                </Stack>
+                <Description>
+                    {t('education.graduation')}
+                </Description>
+                <SecondarySubtitle>{t('education.title')}</SecondarySubtitle>
+                <Description>
+                    {t('education.graduation')}
+                </Description>
+            </CollumnContainer>
+            <CollumnContainer>
+                <SecondarySubtitle>{t('education.title')}</SecondarySubtitle>
+                <Description>
+                    {t('education.graduation')}
+                </Description>
+                <SecondarySubtitle>{t('education.title')}</SecondarySubtitle>
+                <Description>
+                    {t('education.graduation')}
+                </Description>
+            </CollumnContainer>
+        </RowContainer>
+    </Container>
   );
 }
 

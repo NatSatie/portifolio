@@ -1,9 +1,10 @@
 {
   "basic": {
-    "primary": "#2F4550",
-    "secondary": "#586F7C",
-    "secondary-light": "#B8DBD9",
+    "primary": "#160040",
     "white": "#FFFFFF",
-    "black": "#000000"
+    "black": "#000000",
+    "orange": "#E49A67",
+    "purple": "#454099",
+    "pink": "#EA628D"
   }
 }

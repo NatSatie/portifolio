@@ -1,7 +1,15 @@
 {
+  "education": {
+    "title": "Education",
+    "graduation": "Undergratuate Computer Science Student at Univerysity of Campinas (2016-2023)",
+    "description": "",
+    "findMore": ""
+  },
   "bio": {
-    "graduation": "Undergratuade Computer Science Student at UNICAMP (Univerysity of Campinas)",
-    "pronoum": "Pronoums: She/Her"
+    "pronoum": "She/her; 25; brazilian",
+    "subtitle": "Software Developer",
+    "front": "Frone-end developer",
+    "back": "Back-end developer"
   },
   "lang": {
     "en": "EN",
@@ -12,7 +20,8 @@
   "tabs": {
     "about": "About me",
     "experience": "Experience",
-    "projects": "Projects"
+    "projects": "Projects",
+    "contact": "Contact"
   },
   "skill": {
     "begginer": {
@@ -60,15 +69,19 @@
       "project": "Project"
     },
     "description": {
-      "gobots": "Intern as front-end developer, worked with React.js and Typescript, minor experiences with Angular also responsible to development, presentations and code reviews.",
+      "matera": "Intern as back-end developer",
+      "gobots": "Intern as front-end web developer, worked with React.js and Typescript, minor experiences with Angular also responsible to development, presentations and code reviews.",
       "secomp": "Communications coordinator, responsible for the marketing, manage a team to create product for the event and get social network and sponsorship.",
       "pokemon": "A simple generation 1 pokedex, you're able to visualize all 151 pokemon and search by name.",
-      "portifolio": "This website is made by me with React.js and Javascript."
+      "portifolio": "This website is made by me with React.js and Javascript.",
+      "gamux": "Voluntary work for the Game Development Group at UNICAMP, repsonsible for artwork and promoting events and activities."
     },
     "title": {
       "secomp": "SECOMP - Academic Week for Computing (2017-2018)",
       "pokemon": "Pokedex Gen 1",
-      "portifolio": "Portifolio"
+      "portifolio": "Portifolio",
+      "matera": "Matera (01/2022 - now)",
+      "gamux": "Gamux (2017-2018)"
     }
   }
 }
