@@ -1,30 +1,59 @@
 import { useTranslation } from 'react-i18next';
-import { RowContainer, SecondarySubtitle, Image, Container, Title, Info, CollumnContainer, Description } from '../GeneralStyle';
-import Stack from '@mui/material/Stack';
-import SkillTag from '../../SkillTag/SkillTag';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
+import { SkillDiv, ProjectContainer, Subtitle, RowContainer, SecondarySubtitle, Image, Container, Title, Info, CollumnContainer, Description } from '../GeneralStyle';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import { SiGithub, SiCodesandbox } from "react-icons/si";
+import SkillTag from '../../SkillTag/SkillTag';
 
 const ProjectCard = ({ name, tags, img, description, rep, demo}) => {
   const { t } = useTranslation('translation');
 
+  const Buttons = () => (
+    <>
+      { rep &&
+          <Button style={{
+              backgroundColor: "#E49A67",
+              color: 'black',
+              margin: '0 12px 0 0'
+            }}
+            variant="contained" startIcon={<SiGithub />}
+            href={rep}
+            target="_blank"
+          >
+            Github Repo
+          </Button>
+        }
+        { demo &&
+          <Button style={{
+              backgroundColor: "#E49A67",
+              color: 'black',
+              margin: '0 12px 0 0'
+            }}
+            variant="contained" startIcon={<SiCodesandbox />}
+            href={demo}
+            target="_blank"
+          >
+            Demo
+          </Button>
+        }
+    </>
+  );
+
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <ProjectContainer>
       {img}
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {name}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-    </Card>
+      <Subtitle>
+        {name}
+      </Subtitle>
+      <Description>
+        {description}
+      </Description>
+      {tags && <SkillDiv>
+        { tags.map( elem => <SkillTag name={elem.name} icon={elem.icon} />) }
+      </SkillDiv>}
+      <RowContainer>
+        <Buttons/>
+      </RowContainer>
+    </ProjectContainer>
   );
 }
 

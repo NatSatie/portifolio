@@ -22,7 +22,7 @@ export const Subtitle = styled.div`
     letter-spacing: 0em;
     text-align: left;
     color: white;
-    padding: 0 0 12px 0;
+    padding: 12px 0 12px 0;
 `;
 
 export const SecondaryTitle = styled.div`
@@ -50,7 +50,7 @@ export const SecondarySubtitle = styled.div`
 
 export const Info = styled.div`
     font-family: Space Mono;
-    font-size: calc(12px + 1vw);
+    font-size: calc(12px + 0.5vw);
     font-style: normal;
     font-weight: 400;
     line-height: 44px;
@@ -75,6 +75,16 @@ export const ExperienceContainer = styled.div`
     flex-direction: column;
     margin: 32px 16px 32px 0;
 `;
+
+export const ProjectContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin: 32px 32px 32px 0;
+    border: 3px solid ${color.basic.pink};
+    border-radius:5px;
+    padding: 24px;
+`;
+
 
 export const SkillDiv = styled.div`
     display: flex;
@@ -136,4 +146,10 @@ export const Image = styled.img`
   @media only screen and (max-width: 800px) {
     display: none;
   }
+`;
+
+export const ProjectImage = styled.img`
+  object-fit: fill;
+  height: 50%;
+  width: 50%;
 `;

@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { GridContainer, Container, Title, SkillDiv, Description, Subtitle, ExperienceContainer} from './../GeneralStyle';
 import SkillTag from '../../SkillTag/SkillTag';
-import { SiReact, SiTypescript,SiHtml5, SiAngular, SiJava, SiSqlite } from "react-icons/si";
+import { SiReact, SiTypescript,SiJavascript, SiCss3, SiHtml5, SiAngular, SiJava, SiSqlite } from "react-icons/si";
 
 const Experience = () => {
   const { t } = useTranslation('translation');
@@ -29,12 +29,20 @@ const Experience = () => {
           "icon": <SiReact />
         },
         {
-          "name": "Javascript & Typescript",
+          "name": "Javascript",
+          "icon": <SiJavascript />
+        },
+        {
+          "name": "Typescript",
           "icon": <SiTypescript />
         },
         {
-          "name": "HTML & CSS",
+          "name": "HTML",
           "icon": <SiHtml5 />
+        },
+        {
+          "name": "CSS",
+          "icon": <SiCss3 />
         },
         {
           "name": "Angular",

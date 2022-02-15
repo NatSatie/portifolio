@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { RowContainer, SecondarySubtitle, Image, Container, Title, Info, CollumnContainer, Description } from './../GeneralStyle';
+import { GridContainer, SecondarySubtitle, Image, Container, Title, Info, CollumnContainer, Description } from './../GeneralStyle';
 import Stack from '@mui/material/Stack';
 import SkillTag from '../../SkillTag/SkillTag';
 import Card from '@mui/material/Card';
@@ -11,6 +11,7 @@ import Typography from '@mui/material/Typography';
 import ProjectCard from './ProjectCard';
 import archive from './img/archive.png';
 import pokedex from './img/pokedex.jpg';
+import { SiReact, SiTypescript,SiJavascript, SiCss3, SiHtml5, SiAngular, SiJava, SiSqlite } from "react-icons/si";
 
 const Projects = () => {
   const { t } = useTranslation('translation');
@@ -20,10 +21,20 @@ const Projects = () => {
       "name": t('projects.title.portifolio'),
       "tags": [
         {
-          "title": t('projects.tags.project')
+          "name": "React.js",
+          "icon": <SiReact />
         },
         {
-          "title": "React.js"
+          "name": "Javascript",
+          "icon": <SiJavascript />
+        },
+        {
+          "name": "HTML",
+          "icon": <SiHtml5 />
+        },
+        {
+          "name": "CSS",
+          "icon": <SiCss3 />
         }
       ],
       "description": t('projects.description.portifolio'),
@@ -60,7 +71,9 @@ const Projects = () => {
   return (
     <Container isColumn>
         <Title>{t('tabs.projects')}</Title>
-        {experience.map( exp => <ProjectCard name={exp.name} img={exp.img} tags={exp.tags} description={exp.description} rep={exp.rep} demo={exp.demo} />)}
+        <GridContainer>
+          {experience.map( exp => <ProjectCard name={exp.name} img={exp.img} tags={exp.tags} description={exp.description} rep={exp.rep} demo={exp.demo} />)}
+        </GridContainer>
     </Container>
   );
 }
