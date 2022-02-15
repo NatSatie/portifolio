@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next';
-import { Image, Container, Title, Subtitle, CollumnContainer, SecondaryTitle, SkillDiv } from './../GeneralStyle';
+import { ImageContainer, Image, Container, Title, Subtitle, CollumnContainer, SecondaryTitle, SkillDiv } from './../GeneralStyle';
 import image from  './../../../main.png'
 import Stack from '@mui/material/Stack';
-import { SiReact, SiTypescript,SiHtml5, SiAngular, SiJava, SiSqlite } from "react-icons/si";
+import { SiReact, SiTypescript, SiJavascript,SiHtml5, SiAngular, SiJava, SiCss3, SiSqlite } from "react-icons/si";
 import SkillTag from '../../SkillTag/SkillTag';
 
 const Introduction = () => {
@@ -14,12 +14,20 @@ const Introduction = () => {
       "icon": <SiReact />
     },
     {
-      "name": "Javascript & Typescript",
+      "name": "Typescript",
       "icon": <SiTypescript />
     },
     {
-      "name": "HTML & CSS",
+      "name": "Javascript",
+      "icon": <SiJavascript />
+    },
+    {
+      "name": "HTML",
       "icon": <SiHtml5 />
+    },
+    {
+      "name": "CSS",
+      "icon": <SiCss3 />
     },
     {
       "name": "Angular",
@@ -45,24 +53,22 @@ const Introduction = () => {
             <Subtitle>
                 Software Developer
             </Subtitle>
+            <SecondaryTitle>
+                {t('bio.front')}
+            </SecondaryTitle>
             <SkillDiv>
-                <SecondaryTitle>
-                    {t('bio.front')}
-                </SecondaryTitle>
-                <Stack direction="row" spacing={2}>
-                    { front.map(elem => <SkillTag name={elem.name} icon={elem.icon} />)}
-                </Stack>
+              { front.map(elem => <SkillTag name={elem.name} icon={elem.icon} />)}
             </SkillDiv>
+            <SecondaryTitle>
+                {t('bio.back')}
+            </SecondaryTitle>
             <SkillDiv>
-                <SecondaryTitle>
-                    {t('bio.back')}
-                </SecondaryTitle>
-                <Stack direction="row" spacing={2}>
-                    { back.map(elem => <SkillTag name={elem.name} icon={elem.icon} />)}
-                </Stack>
+              { back.map(elem => <SkillTag name={elem.name} icon={elem.icon} />)}
             </SkillDiv>
         </CollumnContainer>
-        <Image src={image}/>
+        <ImageContainer>
+          <Image src={image}/>
+        </ImageContainer>
     </Container>
   );
 }

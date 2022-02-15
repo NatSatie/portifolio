@@ -1,14 +1,14 @@
 {
   "education": {
     "title": "Education",
-    "graduation": "Undergratuate Computer Science Student at Univerysity of Campinas (2016-2023)",
+    "graduation": "Undergratuate Computer Science student at University of Campinas (2016-2023)",
     "description": "",
     "findMore": ""
   },
   "bio": {
     "pronoum": "She/her; 25; brazilian",
     "subtitle": "Software Developer",
-    "front": "Frone-end developer",
+    "front": "Front-end developer",
     "back": "Back-end developer"
   },
   "lang": {

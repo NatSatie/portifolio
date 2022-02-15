@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { RowContainer, SecondarySubtitle, Container, Title, CollumnContainer, Description } from './../GeneralStyle';
-import Stack from '@mui/material/Stack';
+import { GridContainer, Container, Title, SkillDiv, Description, Subtitle, ExperienceContainer} from './../GeneralStyle';
 import SkillTag from '../../SkillTag/SkillTag';
 import { SiReact, SiTypescript,SiHtml5, SiAngular, SiJava, SiSqlite } from "react-icons/si";
 
@@ -73,40 +72,19 @@ const Experience = () => {
   return (
     <Container isColumn>
         <Title>{t('tabs.experience')}</Title>
-        <RowContainer>
-            <CollumnContainer>
-                <SecondarySubtitle>{experience[0].name}</SecondarySubtitle>
-                <Stack direction="row" spacing={2}>
-                    {experience[0].tags.map( elem => <SkillTag name={elem.name} icon={elem.icon} />)}
-                </Stack>
-                <Description>
-                    {experience[0].description}
-                </Description>
-                <SecondarySubtitle>{experience[1].name}</SecondarySubtitle>
-                <Stack direction="row" spacing={2}>
-                    {experience[1].tags.map( elem => <SkillTag name={elem.name} icon={elem.icon} />)}
-                </Stack>
-                <Description>
-                    {experience[1].description}
-                </Description>
-            </CollumnContainer>
-            <CollumnContainer>
-                <SecondarySubtitle>{experience[2].name}</SecondarySubtitle>
-                <Stack direction="row" spacing={2}>
-                    {experience[2].tags.map( elem => <SkillTag name={elem.name} icon={elem.icon} />)}
-                </Stack>
-                <Description>
-                    {experience[2].description}
-                </Description>
-                <SecondarySubtitle>{experience[3].name}</SecondarySubtitle>
-                <Stack direction="row" spacing={2}>
-                    {experience[3].tags.map( elem => <SkillTag name={elem.name} icon={elem.icon} />)}
-                </Stack>
-                <Description>
-                    {experience[3].description}
-                </Description>
-            </CollumnContainer>
-        </RowContainer>
+        <GridContainer>
+          {experience.map( exp => 
+            <ExperienceContainer>
+              <Subtitle>{exp.name}</Subtitle>
+              <SkillDiv>
+                  {exp.tags.map( elem => <SkillTag name={elem.name} icon={elem.icon} />)}
+              </SkillDiv>
+              <Description>
+                  {exp.description}
+              </Description>
+            </ExperienceContainer>
+          )}
+        </GridContainer>
     </Container>
   );
 }

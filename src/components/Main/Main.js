@@ -15,12 +15,10 @@ const Main = () => {
     <Container>
       <MenuWrapper>
         <MenuContainer>
-            <Stack spacing={6} direction="row">
-                <MenuButton>{t('tabs.about')}</MenuButton>
-                <MenuButton>{t('tabs.experience')}</MenuButton>
-                <MenuButton>{t('tabs.projects')}</MenuButton>
-                <MenuButton>{t('tabs.contact')}</MenuButton>
-            </Stack>
+            <MenuButton>{t('tabs.about')}</MenuButton>
+            <MenuButton>{t('tabs.experience')}</MenuButton>
+            <MenuButton>{t('tabs.projects')}</MenuButton>
+            <MenuButton>{t('tabs.contact')}</MenuButton>
             <ChangeLang />
         </MenuContainer>
       </MenuWrapper>
