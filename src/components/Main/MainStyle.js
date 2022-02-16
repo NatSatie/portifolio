@@ -13,6 +13,7 @@ export const MenuWrapper = styled.div`
     top: 0;
     width: 80%;
     max-height: 120px;
+    z-index: 1000;
 `;
 
 export const MenuContainer = styled.div`
