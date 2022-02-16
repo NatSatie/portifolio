@@ -38,6 +38,6 @@ export const MenuButton = styled.button`
     font-family: 'Space Mono', monospace;
     color: ${color.basic.orange};
     cursor: pointer;
-    font-size: calc(12px + 0.5vw);
+    font-size: 16px;
     padding: 10px 12px;
 `;

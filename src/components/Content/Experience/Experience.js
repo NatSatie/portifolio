@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { GridContainer, Container, Title, SkillDiv, Description, Subtitle, ExperienceContainer} from './../GeneralStyle';
+import { CollumnContainer, Container, Title, SkillDiv, Description, Subtitle, ExperienceContainer} from './../GeneralStyle';
 import SkillTag from '../../SkillTag/SkillTag';
 import { SiReact, SiTypescript,SiJavascript, SiCss3, SiHtml5, SiAngular, SiJava, SiSqlite } from "react-icons/si";
 
@@ -80,7 +80,7 @@ const Experience = () => {
   return (
     <Container isColumn>
         <Title>{t('tabs.experience')}</Title>
-        <GridContainer>
+        <CollumnContainer>
           {experience.map( exp => 
             <ExperienceContainer>
               <Subtitle>{exp.name}</Subtitle>
@@ -92,7 +92,7 @@ const Experience = () => {
               </Description>
             </ExperienceContainer>
           )}
-        </GridContainer>
+        </CollumnContainer>
     </Container>
   );
 }

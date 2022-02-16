@@ -3,7 +3,7 @@ import color from './../../theme.json';
 
 export const Title = styled.div`
     font-family: Roboto;
-    font-size: calc(36px + 1vw);
+    font-size: 48px;
     font-style: normal;
     font-weight: 700;
     line-height: 40px;
@@ -15,7 +15,7 @@ export const Title = styled.div`
 
 export const Subtitle = styled.div`
     font-family: Roboto;
-    font-size: calc(24px + 0.5vw);
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: 42px;
@@ -27,7 +27,7 @@ export const Subtitle = styled.div`
 
 export const SecondaryTitle = styled.div`
     font-family: Space Mono;
-    font-size: calc(18px + 0.1vw);
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: 5vh;
@@ -39,7 +39,7 @@ export const SecondaryTitle = styled.div`
 
 export const SecondarySubtitle = styled.div`
     font-family: Roboto;
-    font-size: calc(16px + 0.1vw);
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 38px;
@@ -50,7 +50,7 @@ export const SecondarySubtitle = styled.div`
 
 export const Info = styled.div`
     font-family: Space Mono;
-    font-size: calc(12px + 0.5vw);
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 44px;
@@ -61,7 +61,7 @@ export const Info = styled.div`
 
 export const Description = styled.div`
     font-family: Space Mono;
-    font-size: calc(10px + 0.5vw);
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 44px;
@@ -80,9 +80,12 @@ export const ProjectContainer = styled.div`
     display: flex;
     flex-direction: column;
     margin: 32px 32px 32px 0;
-    border: 3px solid ${color.basic.pink};
+    border: 3px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, ${color.basic.pink}, ${color.basic.purple});
     border-radius:5px;
     padding: 24px;
+    justify-content: space-between;
 `;
 
 
@@ -112,7 +115,11 @@ export const Container = styled.div`
 export const CollumnContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width:${props => props.isShared ? "75%" : "100%"};
+
+  @media only screen and (max-width: 900px) {
+    width: 100%;
+  }
 `;
 
 export const RowContainer = styled.div`

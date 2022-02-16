@@ -48,10 +48,10 @@ const Introduction = () => {
 
   return (
     <Container>
-        <CollumnContainer>
+        <CollumnContainer isShared>
             <Title>Natália Satie Odashima</Title>
             <Subtitle>
-                Software Developer
+              {t('bio.subtitle')}
             </Subtitle>
             <SecondaryTitle>
                 {t('bio.front')}
