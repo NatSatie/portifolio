@@ -8,16 +8,7 @@ const Contact = () => {
 
   return (
     <Container>
-        <CollumnContainer>
-            <Title>{t('tabs.contact')}</Title>
-            <Info>
-                {t('bio.pronoum')}
-            </Info>
-            <SecondarySubtitle>{t('education.title')}</SecondarySubtitle>
-            <Description>
-                {t('education.graduation')}
-            </Description>
-        </CollumnContainer>
+        
     </Container>
   );
 }
