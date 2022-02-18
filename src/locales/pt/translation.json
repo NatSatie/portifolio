@@ -2,8 +2,8 @@
   "education": {
     "title": "Formação",
     "graduation": "Bacharelado em Ciência da Computação na Universidade Estadual de Campinas (2016-2023)",
-    "description": "",
-    "findMore": ""
+    "description": "UNICAMP é Universidade Estadual de Campinas, localizada em Campinas, SP. Ela é considerava uma das três melhores universidades da América Latina. O curso de graduação de Ciência da Computação é realizado pelo IC, Instituto de Computação.",
+    "findMore": "Saiba mais sobre o IC"
   },
   "bio": {
     "pronoum": "Ela/dela; 25; brasileira",
@@ -21,9 +21,11 @@
     "about": "Sobre",
     "experience": "Experiência",
     "projects": "Projetos",
-    "contact": "Contato"
+    "contact": "Contato",
+    "skills": "Habilidades"
   },
   "skill": {
+    "title": "Habilidades",
     "begginer": {
       "description": "Tenho conhecimento da ferramenta, porém não tenho muita experiência",
       "title": "Iniciante"

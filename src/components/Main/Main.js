@@ -22,6 +22,9 @@ const Main = () => {
             <Link activeClass="active" className='exp-link' to="experience" spy={true} smooth={true} duration={500} >
               <MenuButton>{t('tabs.experience')}</MenuButton>
             </Link>
+            <Link activeClass="active" className='skills-link' to="skills" spy={true} smooth={true} duration={500} >
+              <MenuButton>{t('tabs.skills')}</MenuButton>
+            </Link>
             <Link activeClass="active" className='proj-link' to="projects" spy={true} smooth={true} duration={500} >
               <MenuButton>{t('tabs.projects')}</MenuButton>
             </Link>
@@ -37,6 +40,8 @@ const Main = () => {
       </div>
       <div className="experience">
         <Experience/>
+      </div>
+      <div className="skills">
         <Skills />
       </div>
       <div className="projects">

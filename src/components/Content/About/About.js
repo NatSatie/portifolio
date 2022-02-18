@@ -19,11 +19,12 @@ const About = () => {
                 {t('bio.pronoum')}
             </Info>
             <Description>
-                {t('education.graduation')}
+                <b>{t('education.graduation')}</b>
             </Description>
             <Description>
-                {t('education.about')}
+                {t('education.description')}
             </Description>
+            <br/>
             <Button style={{
                 backgroundColor: "#E49A67",
                 color: 'black',
@@ -34,7 +35,7 @@ const About = () => {
               href={ i18n.language === 'en'? "https://ic.unicamp.br/en/graduacao/ciencia-da-computacao/" : "https://ic.unicamp.br/graduacao/ciencia-da-computacao/"}
               target="_blank"
             >
-              {t('about.unicamp')}
+              {t('education.findMore')}
             </Button>
         </CollumnContainer>
     </Container>

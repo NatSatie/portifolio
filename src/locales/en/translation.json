@@ -2,8 +2,8 @@
   "education": {
     "title": "Education",
     "graduation": "Undergratuate Computer Science student at University of Campinas (2016-2023)",
-    "description": "",
-    "findMore": ""
+    "description": "UNICAMP is a public university at Campinas, Brazil. Also it's one of the three best universities in Latin America. The bachelor's degree in Computer Science happens at IC (Institute of Computing).",
+    "findMore": "Find more about IC"
   },
   "bio": {
     "pronoum": "She/her; 25; brazilian",
@@ -21,9 +21,11 @@
     "about": "About me",
     "experience": "Experience",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "skills": "Skills"
   },
   "skill": {
+    "title": "Skills",
     "begginer": {
       "description": "I have knowledge about the tool/language, however I have few experiences",
       "title": "Begginer"

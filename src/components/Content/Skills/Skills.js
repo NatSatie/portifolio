@@ -98,6 +98,14 @@ const Skills = () => {
         }
       ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum.",
+    },
+    {
+      "name": "Idiomas",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum.",
+    },
+    {
+      "name": "Idiomas",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum.",
     }
   ];
 
@@ -111,9 +119,12 @@ const Skills = () => {
             <Description>
               {elem.description}
             </Description>
-            <SkillDiv>
-              {elem.skills.map( skill => <SkillTag name={skill.name} icon={skill.icon} />)}
-            </SkillDiv>
+            {elem.skills &&
+              <SkillDiv>
+                {elem.skills.map( skill => <SkillTag name={skill.name} icon={skill?.icon} />)}
+              </SkillDiv>
+            }
+            
           </ExperienceContainer>
         )}
       </CollumnContainer>
