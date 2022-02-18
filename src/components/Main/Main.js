@@ -3,9 +3,9 @@ import { useTranslation } from 'react-i18next';
 import Introduction from '../Content/Introduction/Introduction';
 import About from '../Content/About/About';
 import Experience from '../Content/Experience/Experience';
+import Skills from '../Content/Skills/Skills';
 import Projects from '../Content/Projects/Projects';
 import Contact from '../Content/Contact/Contact';
-import Stack from '@mui/material/Stack';
 import ChangeLang from '../ChangeLang/ChangeLang';
 import { Link, animateScroll as scroll } from "react-scroll";
 
@@ -37,6 +37,7 @@ const Main = () => {
       </div>
       <div className="experience">
         <Experience/>
+        <Skills />
       </div>
       <div className="projects">
         <Projects/>

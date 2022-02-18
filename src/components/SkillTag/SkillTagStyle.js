@@ -13,6 +13,7 @@ export const Container = styled.div`
     padding: 2px 4px;
     align-items: center;
     margin: 0 10px 10px 0 ;
+    max-width: 200px;
 `;
 
 export const Paragraph = styled.div`

@@ -83,7 +83,7 @@ export const ProjectContainer = styled.div`
     border: 3px solid;
     border-image-slice: 1;
     border-image-source: linear-gradient(to left, ${color.basic.pink}, ${color.basic.purple});
-    border-radius:5px;
+    border-radius: 5px;
     padding: 24px;
     justify-content: space-between;
 `;
@@ -101,6 +101,7 @@ export const SkillDiv = styled.div`
 `;
 
 export const Container = styled.div`
+  background: ${color.basic.primary};
   display: flex;
   flex-direction: ${props => props.isColumn ? "column" : "row"};
   width: 100%;
@@ -119,6 +120,16 @@ export const CollumnContainer = styled.div`
 
   @media only screen and (max-width: 900px) {
     width: 100%;
+  }
+`;
+
+export const FlexibleContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  padding: 32px 0;
+
+  @media only screen and (max-width: 500px) {
+    flex-direction: column;
   }
 `;
 

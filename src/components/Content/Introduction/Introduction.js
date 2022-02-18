@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { ImageContainer, Image, Container, Title, Subtitle, CollumnContainer, SecondaryTitle, SkillDiv } from './../GeneralStyle';
 import image from  './../../../main.png'
-import Stack from '@mui/material/Stack';
 import { SiReact, SiTypescript, SiJavascript,SiHtml5, SiAngular, SiJava, SiCss3, SiSqlite } from "react-icons/si";
 import SkillTag from '../../SkillTag/SkillTag';
 
