@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 import { SiGithub, SiCodesandbox } from "react-icons/si";
 import SkillTag from '../../SkillTag/SkillTag';
 
-const ProjectCard = ({ name, tags, img, description, rep, demo}) => {
+const ProjectCard = ({ name, tags, img, description, rep, demo, linkTo}) => {
   const { t } = useTranslation('translation');
 
   const Buttons = () => (
@@ -35,6 +35,19 @@ const ProjectCard = ({ name, tags, img, description, rep, demo}) => {
             Demo
           </Button>
         }
+        { linkTo &&
+          <Button style={{
+              backgroundColor: "#E49A67",
+              color: 'black',
+              margin: '0 12px 0 0'
+            }}
+            variant="contained"
+            href={demo}
+            target="_blank"
+          >
+            Webpage
+          </Button>
+        }
     </>
   );
 
@@ -47,9 +60,11 @@ const ProjectCard = ({ name, tags, img, description, rep, demo}) => {
       <Description>
         {description}
       </Description>
-      {tags && <SkillDiv>
-        { tags.map( elem => <SkillTag name={elem.name} icon={elem.icon} />) }
-      </SkillDiv>}
+      { tags &&
+        <SkillDiv>
+          { tags.map( elem => <SkillTag name={elem.name} icon={elem?.icon} />) }
+        </SkillDiv>
+      }
       <RowContainer>
         <Buttons/>
       </RowContainer>

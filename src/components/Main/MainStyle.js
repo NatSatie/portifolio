@@ -5,7 +5,10 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin: 90px 0px 0px 0px;
+`;
+
+export const Content = styled.div`
+  margin: 120px 0px 0px 0px;
 `;
 
 export const MenuWrapper = styled.div`
@@ -25,10 +28,6 @@ export const MenuContainer = styled.div`
     width: 100%;
     background-color: ${color.basic.primary};
     @media only screen and (max-width: 900px) {
-      padding: 12px 0;
-    }
-
-    @media only screen and (max-height: 600px) {
       padding: 12px 0;
     }
 `;

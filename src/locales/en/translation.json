@@ -26,6 +26,7 @@
   },
   "skill": {
     "title": "Skills",
+    "experience": "Experience: ",
     "begginer": {
       "description": "I have knowledge about the tool/language, however I have few experiences",
       "title": "Begginer"
@@ -36,28 +37,34 @@
     },
     "advanced": {
       "description": "I know the fundamental concepts and I'm able to create complex projects",
-      "title": "Advanced"
+      "title": "Intermediate to Advanced"
     },
     "nativo": {
       "title": "Native"
     },
     "coding": {
       "web": {
-        "title": "Hard Skills: Web",
+        "title": "Web",
         "description": "Skills related to develop web applications and hability to work with frameworks."
       },
+      "back": {
+        "title": "Back-end",
+        "description": "Skills related to problem-solving, finding bugs and working with databases. Also, apply design patterns, SOLID principles and clean architecture."
+      },
       "code": {
-        "title": "Hard Skills: Programming",
-        "description": "Hability to problem-solving, such as code challenges and developt small scale projects."
+        "title": "Programming and problem-solving",
+        "description": "Ability to problem-solving, such as code challenges and developt small scale projects."
       },
       "other": {
         "title": "Other Skills",
-        "description": "Not relatect directly to technical skills, its about good practises to develop."
+        "teamwork": "Teamwork",
+        "description": "Not relatect directly to technical skills, its about good practises to develop such as team work, communication and git."
       },
       "lang": {
-        "title": "Languages",
+        "title": "Language",
         "pt": "Portuguese",
-        "en": "English"
+        "en": "English",
+        "enDescription": "FCE (First Certificate of English by Cambridge). Capable to undestand english and keep a conversation by text or voice."
       }
     }
   },
@@ -71,6 +78,9 @@
       "project": "Project"
     },
     "description": {
+      "uber": "A university project about statistic studies. The sample studies came from Uber Movement Brazil and how COVID-19 changed the traffic.",
+      "devto": "Dev.to is a plataform like Medium, where I post tutoriais, topics about development and others.",
+      "compiler": "A project inspired by the discipline construction of compilers, a C compiler made in Python. The project aims to refactor the project and practise development of an API.",
       "matera": "Intern as back-end developer",
       "gobots": "Intern as front-end web developer, worked with React.js and Typescript, minor experiences with Angular also responsible to development, presentations and code reviews.",
       "secomp": "Communications coordinator, responsible for the marketing, manage a team to create product for the event and get social network and sponsorship.",
@@ -79,9 +89,12 @@
       "gamux": "Voluntary work for the Game Development Group at UNICAMP, repsonsible for artwork and promoting events and activities."
     },
     "title": {
+      "uber": "Uber Movement: before and after COVID-19",
+      "devto": "Dev.to Posts",
       "secomp": "SECOMP - Academic Week for Computing (2017-2018)",
       "pokemon": "Pokedex Gen 1",
       "portifolio": "Portifolio",
+      "compiler": "API and compilers",
       "matera": "Matera (01/2022 - now)",
       "gamux": "Gamux (2017-2018)"
     }

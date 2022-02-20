@@ -11,22 +11,17 @@ const Contact = () => {
     {
       "name": "LinkedIn",
       "icon": <SiLinkedin/>,
-      "href": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum.",
+      "href": "https://www.linkedin.com/in/natalia-satie/",
     },
     {
       "name": "Github",
       "icon": <SiGithub/>,
-      "href": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum.",
+      "href": "https://github.com/NatSatie",
     },
     {
       "name": "Dev.to",
       "icon": <FaDev/>,
-      "href": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum.",
-    },
-    {
-      "name": "Behance",
-      "icon": <SiBehance/>,
-      "href": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum.",
+      "href": "https://dev.to/satie_sann",
     }
   ];
 
@@ -36,13 +31,15 @@ const Contact = () => {
         <FlexibleContainer>
           {info.map(elem =>
             <Button style={{
-                backgroundColor: 'transparent',
-                color: 'pink',
+                backgroundColor: '#EA628D',
+                color: '#160040',
                 margin: '0 12px 24px 0'
               }}
               variant="contained"
               startIcon={elem.icon}
               fontSize="large"
+              href={elem.href}
+              target="_blank"
             >
               {elem.name}
             </Button>

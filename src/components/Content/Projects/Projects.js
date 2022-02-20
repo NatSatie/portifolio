@@ -9,9 +9,11 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import ProjectCard from './ProjectCard';
-import archive from './img/archive.png';
+import archive from './img/laptop.jpg';
 import pokedex from './img/pokedex.jpg';
-import { SiReact, SiTypescript,SiJavascript, SiCss3, SiHtml5, SiAngular, SiJava, SiSqlite } from "react-icons/si";
+import python from './img/python.jpg';
+import devdotto from './img/devto.png';
+import { SiReact, SiPython, SiJavascript, SiCss3, SiHtml5, SiDevdotto } from "react-icons/si";
 
 const Projects = () => {
   const { t } = useTranslation('translation');
@@ -50,10 +52,20 @@ const Projects = () => {
       "name": t('projects.title.pokemon'),
       "tags": [
         {
-          "title": t('projects.tags.project')
+          "name": "React.js",
+          "icon": <SiReact />
         },
         {
-          "title": "React.js"
+          "name": "Javascript",
+          "icon": <SiJavascript />
+        },
+        {
+          "name": "HTML",
+          "icon": <SiHtml5 />
+        },
+        {
+          "name": "CSS",
+          "icon": <SiCss3 />
         }
       ],
       "description": t('projects.description.pokemon'),
@@ -65,6 +77,57 @@ const Projects = () => {
       />,
       "rep": "https://github.com/NatSatie/pokemon-list",
       "demo": "https://mr34l.sse.codesandbox.io/"
+    },
+    {
+      "name": t('projects.title.uber'),
+      "tags": [
+        {
+          "name": "Python",
+          "icon": <SiPython />
+        }
+      ],
+      "description": t('projects.description.uber'),
+      "img": <CardMedia
+        component="img"
+        height="140"
+        image={python}
+        alt="image alt"
+      />,
+      "linkTo": "https://dev.to/satie_sann/uber-movement-antes-e-depois-do-covid-19-17m",
+      "rep": "https://github.com/NatSatie/MS211-project",
+    },
+    {
+      "name": t('projects.title.compiler'),
+      "tags": [
+        {
+          "name": "Python",
+          "icon": <SiPython />
+        }
+      ],
+      "description": t('projects.description.compiler'),
+      "img": <CardMedia
+        component="img"
+        height="140"
+        image={python}
+        alt="image alt"
+      />,
+      "rep": "https://github.com/NatSatie/first-api-oda",
+    },
+    {
+      "name": t('projects.title.devto'),
+      "description": t('projects.description.devto'),
+      "tags": [
+        {
+          "name": "Study notes"
+        }
+      ],
+      "img": <CardMedia
+        component="img"
+        height="140"
+        image={devdotto}
+        alt="image alt"
+      />,
+      "linkTo": "https://dev.to/satie_sann",
     }
   ];
 
@@ -72,7 +135,7 @@ const Projects = () => {
     <Container isColumn>
         <Title>{t('tabs.projects')}</Title>
         <GridContainer>
-          {experience.map( exp => <ProjectCard name={exp.name} img={exp.img} tags={exp.tags} description={exp.description} rep={exp.rep} demo={exp.demo} />)}
+          {experience.map( exp => <ProjectCard name={exp.name} img={exp.img} tags={exp.tags} description={exp.description} rep={exp?.rep} demo={exp?.demo} linkTo={exp?.linkTo}/>)}
         </GridContainer>
     </Container>
   );

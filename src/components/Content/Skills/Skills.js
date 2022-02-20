@@ -3,7 +3,15 @@ import {
   ImageContainer, Image, Container, Title, Info, CollumnContainer, Description, Subtitle, SkillDiv, ExperienceContainer
 } from './../GeneralStyle';
 import SkillTag from '../../SkillTag/SkillTag';
-import { SiReact, SiTypescript,SiJavascript, SiCss3, SiHtml5, SiAngular, SiJava, SiSqlite } from "react-icons/si";
+import {
+  SiReact,
+  SiTypescript,
+  SiJavascript,
+  SiCss3, SiHtml5,
+  SiAngular,
+  SiJava, SiSqlite,
+  SiCplusplus, SiPython, SiGit
+} from "react-icons/si";
 import image from  './../../../about.png';
 import Button from '@mui/material/Button';
 
@@ -12,11 +20,15 @@ const Skills = () => {
 
   const info = [
     {
-      "name": "Front-end skills",
+      "name": t('skill.coding.web.title'),
       "skills": [
         {
           "name": "React.js",
           "icon": <SiReact />
+        },
+        {
+          "name": "Typescript",
+          "icon": <SiTypescript />
         },
         {
           "name": "Javascript",
@@ -29,83 +41,69 @@ const Skills = () => {
         {
           "name": "CSS",
           "icon": <SiCss3 />
+        },
+        {
+          "name": "Angular",
+          "icon": <SiAngular />
         }
       ],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum.",
+      "description": t('skill.coding.web.description'),
+      "experience": t('skill.advanced.title')+ ". "+t('skill.advanced.description'),
     },
     {
-      "name": "Back-end skills",
+      "name": t('skill.coding.back.title'),
       "skills": [
         {
-          "name": "React.js",
-          "icon": <SiReact />
+          "name": "Java",
+          "icon": <SiJava />
         },
         {
-          "name": "Javascript",
-          "icon": <SiJavascript />
-        },
-        {
-          "name": "HTML",
-          "icon": <SiHtml5 />
-        },
-        {
-          "name": "CSS",
-          "icon": <SiCss3 />
+            "name": "PL/SQL",
+            "icon": <SiSqlite />
         }
       ],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum.",
+      "description": t('skill.coding.back.description'),
+      "experience": t('skill.intermediate.title')+ ". "+t('skill.intermediate.description'),
     },
     {
-      "name": "Coding and problem solving",
+      "name": t('skill.coding.code.title'),
       "skills": [
         {
-          "name": "React.js",
-          "icon": <SiReact />
+          "name": "C++",
+          "icon": <SiCplusplus />
         },
         {
-          "name": "Javascript",
-          "icon": <SiJavascript />
-        },
-        {
-          "name": "HTML",
-          "icon": <SiHtml5 />
-        },
-        {
-          "name": "CSS",
-          "icon": <SiCss3 />
+          "name": "Python",
+          "icon": <SiPython />
         }
       ],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum.",
+      "description": t('skill.coding.code.description'),
+      "experience": t('skill.intermediate.title')+ ". "+t('skill.intermediate.description'),
     },
     {
-      "name": "Soft skills",
+      "name": t('skill.coding.other.title'),
       "skills": [
         {
-          "name": "React.js",
-          "icon": <SiReact />
+          "name": "Git",
+          "icon": <SiGit />
         },
         {
-          "name": "Javascript",
-          "icon": <SiJavascript />
+          "name": "Agile"
         },
         {
-          "name": "HTML",
-          "icon": <SiHtml5 />
-        },
-        {
-          "name": "CSS",
-          "icon": <SiCss3 />
+          "name": t('skill.coding.other.teamwork')
         }
       ],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum.",
+      "description": t('skill.coding.other.description'),
+      "experience": t('skill.intermediate.title')+ ". "+t('skill.intermediate.description'),
     },
     {
-      "name": "Idiomas",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum.",
+      "name": t('skill.coding.lang.title') + ": " + t('skill.coding.lang.pt'),
+      "description": t('skill.nativo.title'),
     },
     {
-      "name": "Idiomas",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum.",
+      "name": t('skill.coding.lang.title') + ": " + t('skill.coding.lang.en'),
+      "description": t('skill.coding.lang.enDescription'),
     }
   ];
 
@@ -116,15 +114,20 @@ const Skills = () => {
         {info.map( elem => 
           <ExperienceContainer>
             <Subtitle>{elem.name}</Subtitle>
-            <Description>
-              {elem.description}
-            </Description>
             {elem.skills &&
               <SkillDiv>
                 {elem.skills.map( skill => <SkillTag name={skill.name} icon={skill?.icon} />)}
               </SkillDiv>
             }
-            
+            <Description>
+              {elem.description}
+            </Description>]
+            {
+              elem?.experience && 
+              <Description>
+                <b>{t('skill.experience')}</b> {elem?.experience}
+              </Description>
+            }
           </ExperienceContainer>
         )}
       </CollumnContainer>

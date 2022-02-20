@@ -26,6 +26,7 @@
   },
   "skill": {
     "title": "Habilidades",
+    "experience": "Experiência: ",
     "begginer": {
       "description": "Tenho conhecimento da ferramenta, porém não tenho muita experiência",
       "title": "Iniciante"
@@ -36,28 +37,34 @@
     },
     "advanced": {
       "description": "Conheço muito bem os fundamentos e posso criar projetos complexos",
-      "title": "Avançado"
+      "title": "Intermediário a avançado"
     },
     "nativo": {
       "title": "Nativo"
     },
     "coding": {
       "web": {
-        "title": "Hard Skills: Web",
+        "title": "Web",
         "description": "Consiste nas habilidades em desenvolver sistemas para plataformas web e na proficiência do uso de frameworks."
       },
+      "back": {
+        "title": "Back-end",
+        "description": "Consiste nas habilidades de identificar bug em sistemas back-end, manipulação de banco de dados. Além de aplicar boas práticas como padrões de projeto, princípios SOLID e fundamentos de arquitetura."
+      },
       "code": {
-        "title": "Hard Skills: Programação",
+        "title": "Programação e solução de problemas",
         "description": "Essa lista consiste nas habilidades em solução de problemas, como desafios de programação e desenvolvimento de projetos pequenos."
       },
       "other": {
-        "title": "Outras Habilidades",
-        "description": "São habilidades relacionadas à área de tecnologia que não são linguagens de programação, como práticas de desenvolvimento."
+        "title": "Outras habilidades: Tecnologia",
+        "teamwork": "Trabalho em equipe",
+        "description": "São habilidades relacionadas à área de tecnologia que não são linguagens de programação, como práticas de desenvolvimento, trabalho em equipe e uso do Git."
       },
       "lang": {
-        "title": "Línguas",
+        "title": "Língua",
         "pt": "Português",
-        "en": "Inglês"
+        "en": "Inglês",
+        "enDescription": "FCE (First Certificate of English realizada por Cambridge). Capaz de compreender a língua inglesa com facilidade, capaz relaziar uma conversa em inglês por texto ou voz."
       }
     }
   },
@@ -71,6 +78,9 @@
       "project": "Projeto"
     },
     "description": {
+      "uber": "Trata-se de um estudo estatistico da disciplina de Cãlculo numérico. A amostra de dados foi recolhida a partir do Uber Movement Brasil e foi analisado as mudanças nos primeiros 3 meses da pandemia.",
+      "devto": "Dev.to é um blog semelhante ao Medium. Nele são postados tópicos sobre desenvolvimentos, tutoriais e outros.",
+      "compiler": "E um projeto inspirado na dsiciplina de compiladores com foco em desenvolvimento de um compilador C feito em Python. Esse projeto tem o objetivo de estudar a construção de uma API e melhorar o projeto realizado no curso.",
       "matera": "Estagiária em desenvolvimento back-end.",
       "gobots": "Estagiária em desenvolvimento web, trabalhei com React.js e Typescript, com algumas experiências com Angular. Responsável pelo desenvolvimento de features, apresentações e revisão de código.",
       "secomp": "Coordenadora de comunicação, responsável pelo marketing, gerenciamento do time para criar produtos para o evento e obter patrocínios.",
@@ -79,6 +89,9 @@
       "gamux": "Voluntária no grupo de desenvolvimento de jogos da UNICAMP, responsável por promover atividades e criação da identidade visual."
     },
     "title": {
+      "uber": "Uber Movement: antes e depois COVID-19",
+      "devto": "Dev.to Posts",
+      "compiler": "API e compiladores",
       "secomp": "SECOMP - Semana Acadêmica de Computação da UNICAMP (2017-2018)",
       "pokemon": "Pokedex Geração 1",
       "portifolio": "Portifolio",

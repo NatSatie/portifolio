@@ -42,7 +42,7 @@ const Introduction = () => {
     {
         "name": "PL/SQL",
         "icon": <SiSqlite />
-      }
+    }
   ];
 
   return (
