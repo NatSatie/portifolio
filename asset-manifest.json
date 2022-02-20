@@ -1,17 +1,19 @@
 {
   "files": {
     "main.css": "/portifolio/static/css/main.6a4c8eef.css",
-    "main.js": "/portifolio/static/js/main.3c33daa7.js",
+    "main.js": "/portifolio/static/js/main.89e368f7.js",
+    "static/media/devto.png": "/portifolio/static/media/devto.73e43f17976a8c559d43.png",
+    "static/media/laptop.jpg": "/portifolio/static/media/laptop.e7bd4de648fcc56216b0.jpg",
     "static/media/main.png": "/portifolio/static/media/main.577ce7e40ca9ef8ade8a.png",
     "static/media/about.png": "/portifolio/static/media/about.6c05702bc0ce1e97dcda.png",
-    "static/media/archive.png": "/portifolio/static/media/archive.d15719bc47b770e99741.png",
     "static/media/pokedex.jpg": "/portifolio/static/media/pokedex.917432ec1e9b1587f8d8.jpg",
+    "static/media/python.jpg": "/portifolio/static/media/python.ce746ea642e8c79c0205.jpg",
     "index.html": "/portifolio/index.html",
     "main.6a4c8eef.css.map": "/portifolio/static/css/main.6a4c8eef.css.map",
-    "main.3c33daa7.js.map": "/portifolio/static/js/main.3c33daa7.js.map"
+    "main.89e368f7.js.map": "/portifolio/static/js/main.89e368f7.js.map"
   },
   "entrypoints": [
     "static/css/main.6a4c8eef.css",
-    "static/js/main.3c33daa7.js"
+    "static/js/main.89e368f7.js"
   ]
 }
